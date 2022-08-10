@@ -4,86 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Document</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      .barra {
-        height: 50px;
-        background-color: slategray;
-      }
-      .logo,
-      .lista {
-        display: inline-block;
-      }
-      .lista {
-        position: absolute;
-        right: 0;
-        margin: 0 10px;
-      }
-      .lista li {
-        display: inline-block;
-        margin: 0 5px;
-      }
-      section {
-        display: block;
-        margin: 0;
-        padding: 0;
-        background: seagreen;
-        height: 86vh;
-        border: 1px solid red;
-      }
-      .side-container {
-        display: inline-block;
-        width: 20%;
-        height: 100%;
-        background: skyblue;
-      }
-      .side-box {
-        background: gainsboro;
-        height: 20%;
-        width: 80%;
-        margin: 15px;
-      }
-      .body-page {
-        display: inline-block;
-        background: seagreen;
-        position: absolute;
-      }
-      .body-page p {
-        font-size: large;
-        margin: 0;
-      }
-      .firma {
-        background: sienna;
-        display: inline-block;
-        width: 100vw;
-        height: 50px;
-        margin: 0;
-      }
-    </style>
   </head>
   <body>
-    <nav class="barra">
-      <div class="logo">Logo</div>
-      <ul class="lista">
-        <li>home</li>
-        <li>cursos</li>
-        <li>instructores</li>
-        <li>blog</li>
+    <nav class="nav">
+      <div class="nav_left">Logo</div>
+      <ul class="nav_right">
+        <li>Home</li>
+        <li>Cursos</li>
+        <li>Instructores</li>
+        <li>Blog</li>
       </ul>
     </nav>
-    <section>
-      <div class="side-container">
+    <section class="container">
+      <div class="container_sidebar">
         <div class="side-box"></div>
         <div class="side-box"></div>
         <div class="side-box"></div>
         <div class="side-box"></div>
       </div>
-      <div class="body-page">
+      <div class="main-container">
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
           suscipit expedita nemo quae minima dolorum numquam quisquam itaque
@@ -92,6 +33,6 @@
         </p>
       </div>
     </section>
-    <footer class="firma"><p>ASDASDAS</p></footer>
+    <footer class="final"><p>Creado por Fabio</p></footer>
   </body>
 </html>
