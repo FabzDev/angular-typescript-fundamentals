@@ -34,7 +34,11 @@ const gandalf :Character = {
     }
 }
 
-function giveHeal(char:Character, amt: number){
+// function giveHeal(char:Character, amt: number){
+//     char.hp += amt;
+// }
+
+const giveHeal = (char:Character, amt:number):void =>{
     char.hp += amt;
 }
 
