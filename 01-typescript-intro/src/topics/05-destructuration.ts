@@ -24,7 +24,7 @@ const audioPlayer: AudioPlayer = {
     details: details
 }
 
-const song = 'new song';
+// const song = 'new song';
 
 // const { 
 //     song: songDes, 
@@ -34,4 +34,12 @@ const song = 'new song';
 const { song: songDes, audioVolume: volDes, details:det} = audioPlayer;
 const { author:aut } = det;
 
-console.log(song, songDes, volDes, aut);
+// console.log(song, songDes, volDes, aut);
+
+const pokemons: string[] = [ 'bulbasor','charmander','squartel' ];
+
+const [, , , p4 = 'Este pokemon no esta registrado en tu Pokedex'] = pokemons;
+
+// console.log(`El primer pokemon es: ${p1}`);
+// console.log(`El segundo pokemon es: ${p2}`);
+console.log(`El cuarto pokemon es: ${p4}`);
