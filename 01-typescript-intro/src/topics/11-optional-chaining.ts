@@ -23,4 +23,4 @@ const howManyChilds = (pass: Passenger): number => {
     return amount;
 }
 
-howManyChilds(passenger1);
+howManyChilds(passenger2);
