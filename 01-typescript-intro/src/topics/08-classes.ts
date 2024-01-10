@@ -5,16 +5,19 @@ export class Person {
         ){}
 }
 
-export class Hero extends Person{
+export class Hero {
+
     constructor(
-        public alterEgo:string = 'ironman',
-        public age:number = 40,
-        public realName:string = 'Tony'
-        
-        ){super(realName, 'New York');};
+        public alterEgo:string,
+        public age:number,
+        public realName:string,
+        public person: Person
+        ){};
 }
 
-const ironman = new Hero('ironman', 33, 'Fabio');
+const tony = new Person('Tony Stark', 'New York');
+
+const ironman = new Hero('Ironman', 35, 'Anthony', tony);
 
 console.log(ironman);
 
