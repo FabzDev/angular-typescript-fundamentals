@@ -1,0 +1,13 @@
+button {
+background-color: darkslategray;
+color: aliceblue;
+}
+
+h1{
+  font-size: 50px;;
+}
+
+td{
+  font-size: 1rem;
+  font-weight: bold;
+}
