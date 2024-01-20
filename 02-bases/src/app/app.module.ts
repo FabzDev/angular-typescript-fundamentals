@@ -4,6 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { CounterModule } from './counter/counter.module';
 import { HeroModule } from './heroes/heroes.module';
+import { DBZModule } from './dbz/dbz.module';
 
 import { AppComponent } from './app.component';
 
@@ -15,7 +16,8 @@ import { AppComponent } from './app.component';
     BrowserModule,
     AppRoutingModule,
     CounterModule,
-    HeroModule
+    HeroModule,
+    DBZModule
   ],
   providers: [],
   bootstrap: [AppComponent]
