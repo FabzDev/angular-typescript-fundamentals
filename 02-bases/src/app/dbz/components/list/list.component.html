@@ -3,19 +3,21 @@
 <ul class="list-group">
 
   <li *ngFor="
-      let character of characters_list;
-      let i = index;
+      let char of characters_list; let i = index;
       let f = first;
       let l = last;
-      let even as par;
-      let odd as impar;
-       " class="list-group-item">
+      let par = even;
+      let impar = odd;
+      " class="list-group-item d-flex justify-content-between align-items-center"
+    [ngClass]="{'list-group-item-primary': par, 'list-group-item-warning': f || l}">
 
-    <span class="text-primary">{{i + 1}}.
+    <div>
+      <span class="text-primary">{{i + 1}}.
+      </span> <span> {{char.name}}</span> -
+      <strong>Power: </strong> {{char.power}}
+    </div>
 
-    </span> <span> {{character.name}}</span> -
-
-    <strong>Power: </strong> {{character.power}}
+    <button (click)="onDeleteChar(char.id)" class="btn btn-danger">X</button>
 
   </li>
 

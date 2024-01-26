@@ -4,13 +4,14 @@
 
   <div class="col">
 
-    <app-dbz-list [characters_list]="characters_mainPage"></app-dbz-list>
+    <app-dbz-list (deleteEventEmitter)="onDeleteCharacter($event)"
+      [characters_list]="characters"></app-dbz-list>
 
   </div>
 
   <div class="col">
 
-    <app-dbz-add-character></app-dbz-add-character>
+    <app-dbz-add-character (new_character_emitter)="onNewCharacter($event)"></app-dbz-add-character>
 
   </div>
 
