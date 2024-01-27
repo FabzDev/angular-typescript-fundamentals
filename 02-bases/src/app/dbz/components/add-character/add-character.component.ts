@@ -20,7 +20,7 @@ export class AddCharacterComponent {
     if (this.character.name.length == 0){return}
     this.new_character_emitter.emit(this.character)
 
-    this.character = {... this.character}
+    this.character = {name : '', power : 0}
   }
 
 
